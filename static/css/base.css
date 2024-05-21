@@ -6,13 +6,15 @@ html {
 }
 
 /*_____________________________________________________________   NAVBAR  */
+/* Items flexible, center-align */
 .dropdown-item { 
-  display: flex;              /* Items flexible */
-  align-items: center;        /* Centers items within flex container */
+  display: flex;
+  align-items: center;
 }
 
+ /* Space between badge */
 .dropdown-item .badge {
-  margin-left: 5px;           /* Space between badge */
+  margin-left: 5px;
 }
 
 /* Center the search form */
@@ -32,7 +34,7 @@ html {
 
 /* Placeholder text color */
 .search-input::placeholder {
-  color: #FF70C0; /* Set placeholder text color */
+  color: #FF70C0;
 }
 
 
@@ -62,7 +64,7 @@ html {
   height: 30px;
 }
 
-/*_____________________________________________________________   Navbar - in mobileview */
+/*_______________________________________  SMARTPHONE-VIEW */
 /* Vertically align navbar brand and toggler button */
 .navbar-brand,
 .navbar-toggler {
