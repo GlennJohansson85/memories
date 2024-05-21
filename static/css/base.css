@@ -1,17 +1,98 @@
-/*_____________________________________________________________   CUSTOM
-/* Base */
+/*_____________________________________________________________   OVERALL  */
 html {
   max-width: 1200px!important;
   margin-right: auto;
   margin-left: auto;
 }
 
+/*_____________________________________________________________   NAVBAR  */
+.dropdown-item { 
+  display: flex;              /* Items flexible */
+  align-items: center;        /* Centers items within flex container */
+}
 
-import '../scss/styles.scss';
-import * as mdb from 'mdb-ui-kit'; // lib
-window.mdb = mdb;
+.dropdown-item .badge {
+  margin-left: 5px;           /* Space between badge */
+}
 
-// Initialization for ES Users
-import { Dropdown, Collapse, initMDB } from "mdb-ui-kit";
+/* Center the search form */
+.mx-auto .search .input-group {
+  width: 100%;
+}
 
-initMDB({ Dropdown, Collapse });
+/*_______________________ SEARCH INPUT FIELD */
+/* Search input field */
+.search-input {
+  background-color: #ffffff; /* background color */
+  color: #000000;            /* text color */
+  border-radius: 0px;
+  border: 1px solid #FF70C0;
+  font-size: 1rem;
+}
+
+/* Placeholder text color */
+.search-input::placeholder {
+  color: #FF70C0; /* Set placeholder text color */
+}
+
+
+/*_______________________ SEARCH BUTTON */
+/* Search Icon Color */
+.search-btn .fa-search {
+  color: #FF70C0;
+}
+
+/* Search Icon Background Color */
+.search-btn {
+  background-color: white;
+  border-radius: 0px;
+  border: 1px solid #FF70C0;
+}
+
+.search-btn:hover {
+  background-color: #bed4f3;
+  border-color: #FF70C0;
+}
+
+/*_______________________ PROFILE IMAGE */
+/* Style for the profile image in the navbar */
+.navbar .nav-link img {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+
+/*_____________________________________________________________   Navbar - in mobileview */
+/* Vertically align navbar brand and toggler button */
+.navbar-brand,
+.navbar-toggler {
+  align-items: center;
+  display: flex;
+}
+
+/* Ensure the image fills the height of the navbar-brand */
+.navbar-brand img {
+  height: 34px;
+  width: 135px;
+}
+
+/*_______________________ TOGGLER BUTTON
+/* Size / Position / Shape */
+.navbar-toggler {
+  padding: 0.1rem 0.5rem;
+  font-size: 1.05rem;
+  border-radius: 0px;
+}
+
+/* 3 lines - Color */
+.navbar-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='%23FF70C0' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Outline - Color / Shape */
+.navbar-toggler:focus {
+  outline: 2px solid #FF70C0;
+  border-radius: 0px;
+}
+
+
